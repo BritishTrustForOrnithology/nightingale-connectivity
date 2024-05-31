@@ -2,13 +2,8 @@
 .Rhistory
 .RData
 .Rdata
-2013/
-2016/
-2017/
-2018/
-2019/
-Africa tagged Nightingale data/
-.gle
-Tagging sites for retrieved data.csv
 .Ruserdata
 sdm/
+geolocator*data/
+ringing*data/
+
