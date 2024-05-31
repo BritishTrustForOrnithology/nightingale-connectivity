@@ -1,0 +1,700 @@
+YEAR,TOTAL,species,scheme
+1910,11,Luscinia megarhynchos,GB1
+1911,4,Luscinia megarhynchos,GB1
+1911,2,Luscinia megarhynchos,NL1
+1912,13,Luscinia megarhynchos,NL1
+1913,8,Luscinia megarhynchos,GB1
+1913,9,Luscinia megarhynchos,NL1
+1914,4,Luscinia megarhynchos,GB1
+1914,2,Luscinia megarhynchos,NL1
+1915,7,Luscinia megarhynchos,GB1
+1916,7,Luscinia megarhynchos,GB1
+1918,5,Luscinia megarhynchos,GB1
+1919,5,Luscinia megarhynchos,GB1
+1920,19,Luscinia megarhynchos,GB1
+1920,5,Luscinia megarhynchos,NL1
+1921,19,Luscinia megarhynchos,GB1
+1921,3,Luscinia megarhynchos,NL1
+1922,20,Luscinia megarhynchos,GB1
+1922,5,Luscinia megarhynchos,NL1
+1923,19,Luscinia megarhynchos,GB1
+1924,18,Luscinia megarhynchos,GB1
+1924,9,Luscinia megarhynchos,NL1
+1925,23,Luscinia megarhynchos,GB1
+1925,39,Luscinia megarhynchos,NL1
+1926,33,Luscinia megarhynchos,GB1
+1926,31,Luscinia megarhynchos,NL1
+1927,40,Luscinia megarhynchos,GB1
+1927,28,Luscinia megarhynchos,NL1
+1928,37,Luscinia megarhynchos,GB1
+1928,12,Luscinia megarhynchos,NL1
+1929,38,Luscinia megarhynchos,GB1
+1929,10,Luscinia megarhynchos,NL1
+1929,5,Luscinia megarhynchos,CHE
+1930,18,Luscinia megarhynchos,GB1
+1930,26,Luscinia megarhynchos,NL1
+1930,4,Luscinia megarhynchos,CHE
+1931,161,Luscinia megarhynchos,GB1
+1931,5,Luscinia megarhynchos,DN1
+1931,1,Luscinia megarhynchos,FR1
+1931,11,Luscinia megarhynchos,NL1
+1931,7,Luscinia megarhynchos,CHE
+1932,151,Luscinia megarhynchos,GB1
+1932,6,Luscinia megarhynchos,FR1
+1932,21,Luscinia megarhynchos,NL1
+1932,24,Luscinia megarhynchos,CHE
+1933,283,Luscinia megarhynchos,GB1
+1933,10,Luscinia megarhynchos,FR1
+1933,11,Luscinia megarhynchos,NL1
+1933,20,Luscinia megarhynchos,CHE
+1934,289,Luscinia megarhynchos,GB1
+1934,14,Luscinia megarhynchos,FR1
+1934,24,Luscinia megarhynchos,NL1
+1934,23,Luscinia megarhynchos,CHE
+1935,383,Luscinia megarhynchos,GB1
+1935,20,Luscinia megarhynchos,FR1
+1935,16,Luscinia megarhynchos,NL1
+1935,15,Luscinia megarhynchos,CHE
+1936,416,Luscinia megarhynchos,GB1
+1936,25,Luscinia megarhynchos,FR1
+1936,19,Luscinia megarhynchos,NL1
+1936,22,Luscinia megarhynchos,CHE
+1937,367,Luscinia megarhynchos,GB1
+1937,10,Luscinia megarhynchos,FR1
+1937,33,Luscinia megarhynchos,NL1
+1937,6,Luscinia megarhynchos,CHE
+1938,5,Luscinia megarhynchos,GB1
+1938,6,Luscinia megarhynchos,FR1
+1938,53,Luscinia megarhynchos,NL1
+1939,1,Luscinia megarhynchos,GB1
+1939,7,Luscinia megarhynchos,FR1
+1939,34,Luscinia megarhynchos,NL1
+1939,3,Luscinia megarhynchos,CHE
+1940,21,Luscinia megarhynchos,GB1
+1940,2,Luscinia megarhynchos,FR1
+1940,21,Luscinia megarhynchos,NL1
+1940,1,Luscinia megarhynchos,CHE
+1941,5,Luscinia megarhynchos,GB1
+1941,1,Luscinia megarhynchos,FR1
+1941,10,Luscinia megarhynchos,NL1
+1941,2,Luscinia megarhynchos,CHE
+1942,7,Luscinia megarhynchos,GB1
+1942,10,Luscinia megarhynchos,FR1
+1942,12,Luscinia megarhynchos,NL1
+1943,3,Luscinia megarhynchos,FR1
+1943,13,Luscinia megarhynchos,NL1
+1944,24,Luscinia megarhynchos,GB1
+1944,6,Luscinia megarhynchos,FR1
+1944,8,Luscinia megarhynchos,NL1
+1944,1,Luscinia megarhynchos,CHE
+1945,3,Luscinia megarhynchos,GB1
+1945,5,Luscinia megarhynchos,FR1
+1945,10,Luscinia megarhynchos,NL1
+1946,24,Luscinia megarhynchos,GB1
+1946,2,Luscinia megarhynchos,FR1
+1946,26,Luscinia megarhynchos,NL1
+1946,9,Luscinia megarhynchos,CHE
+1947,40,Luscinia megarhynchos,GB1
+1947,26,Luscinia megarhynchos,FR1
+1947,146,Luscinia megarhynchos,NL1
+1947,11,Luscinia megarhynchos,CHE
+1948,26,Luscinia megarhynchos,GB1
+1948,7,Luscinia megarhynchos,FR1
+1948,122,Luscinia megarhynchos,NL1
+1948,1,Luscinia megarhynchos,CHE
+1949,29,Luscinia megarhynchos,GB1
+1949,9,Luscinia megarhynchos,FR1
+1949,96,Luscinia megarhynchos,NL1
+1949,7,Luscinia megarhynchos,CHE
+1950,58,Luscinia megarhynchos,GB1
+1950,23,Luscinia megarhynchos,FR1
+1950,69,Luscinia megarhynchos,NL1
+1950,11,Luscinia megarhynchos,CHE
+1951,70,Luscinia megarhynchos,GB1
+1951,16,Luscinia megarhynchos,FR1
+1951,82,Luscinia megarhynchos,NL1
+1951,28,Luscinia megarhynchos,CHE
+1952,99,Luscinia megarhynchos,GB1
+1952,14,Luscinia megarhynchos,FR1
+1952,76,Luscinia megarhynchos,NL1
+1952,16,Luscinia megarhynchos,CHE
+1953,111,Luscinia megarhynchos,GB1
+1953,139,Luscinia megarhynchos,FR1
+1953,67,Luscinia megarhynchos,NL1
+1953,60,Luscinia megarhynchos,CHE
+1954,114,Luscinia megarhynchos,GB1
+1954,74,Luscinia megarhynchos,FR1
+1954,49,Luscinia megarhynchos,NL1
+1954,60,Luscinia megarhynchos,CHE
+1955,70,Luscinia megarhynchos,GB1
+1955,16,Luscinia megarhynchos,FR1
+1955,72,Luscinia megarhynchos,NL1
+1955,76,Luscinia megarhynchos,CHE
+1956,106,Luscinia megarhynchos,GB1
+1956,23,Luscinia megarhynchos,FR1
+1956,79,Luscinia megarhynchos,NL1
+1956,71,Luscinia megarhynchos,CHE
+1957,89,Luscinia megarhynchos,GB1
+1957,90,Luscinia megarhynchos,FR1
+1957,288,Luscinia megarhynchos,DEU
+1957,36,Luscinia megarhynchos,NL1
+1957,101,Luscinia megarhynchos,CHE
+1958,94,Luscinia megarhynchos,GB1
+1958,20,Luscinia megarhynchos,FR1
+1958,451,Luscinia megarhynchos,DEU
+1958,48,Luscinia megarhynchos,NL1
+1958,79,Luscinia megarhynchos,CHE
+1959,72,Luscinia megarhynchos,GB1
+1959,296,Luscinia megarhynchos,FR1
+1959,429,Luscinia megarhynchos,DEU
+1959,57,Luscinia megarhynchos,NL1
+1959,76,Luscinia megarhynchos,CHE
+1960,118,Luscinia megarhynchos,GB1
+1960,41,Luscinia megarhynchos,FR1
+1960,364,Luscinia megarhynchos,DEU
+1960,1,Luscinia megarhynchos                        ,ESP
+1960,104,Luscinia megarhynchos,NL1
+1960,71,Luscinia megarhynchos,CHE
+1961,74,Luscinia megarhynchos,GB1
+1961,9,Luscinia megarhynchos,FR1
+1961,310,Luscinia megarhynchos,DEU
+1961,1,Luscinia megarhynchos                        ,ESP
+1961,37,Luscinia megarhynchos,NL1
+1961,101,Luscinia megarhynchos,CHE
+1962,107,Luscinia megarhynchos,GB1
+1962,5,Luscinia megarhynchos,FR1
+1962,310,Luscinia megarhynchos,DEU
+1962,21,Luscinia megarhynchos                        ,ESP
+1962,73,Luscinia megarhynchos,NL1
+1962,83,Luscinia megarhynchos,CHE
+1963,116,Luscinia megarhynchos,GB1
+1963,9,Luscinia megarhynchos,FR1
+1963,319,Luscinia megarhynchos,DEU
+1963,14,Luscinia megarhynchos                        ,ESP
+1963,55,Luscinia megarhynchos,NL1
+1963,62,Luscinia megarhynchos,CHE
+1964,99,Luscinia megarhynchos,GB1
+1964,26,Luscinia megarhynchos,FR1
+1964,283,Luscinia megarhynchos,DEU
+1964,225,Luscinia megarhynchos,DEU
+1964,5,Luscinia megarhynchos                        ,ESP
+1964,51,Luscinia megarhynchos,NL1
+1964,75,Luscinia megarhynchos,CHE
+1965,119,Luscinia megarhynchos,GB1
+1965,61,Luscinia megarhynchos,FR1
+1965,312,Luscinia megarhynchos,DEU
+1965,131,Luscinia megarhynchos,DEU
+1965,2,Luscinia megarhynchos                        ,ESP
+1965,72,Luscinia megarhynchos,NL1
+1965,90,Luscinia megarhynchos,CHE
+1966,139,Luscinia megarhynchos,GB1
+1966,111,Luscinia megarhynchos,FR1
+1966,216,Luscinia megarhynchos,DEU
+1966,171,Luscinia megarhynchos,DEU
+1966,7,Luscinia megarhynchos                        ,ESP
+1966,61,Luscinia megarhynchos,NL1
+1966,47,Luscinia megarhynchos,CHE
+1967,145,Luscinia megarhynchos,GB1
+1967,146,Luscinia megarhynchos,FR1
+1967,320,Luscinia megarhynchos,DEU
+1967,324,Luscinia megarhynchos,DEU
+1967,8,Luscinia megarhynchos                        ,ESP
+1967,100,Luscinia megarhynchos,NL1
+1967,74,Luscinia megarhynchos,CHE
+1968,152,Luscinia megarhynchos,GB1
+1968,181,Luscinia megarhynchos,FR1
+1968,247,Luscinia megarhynchos,DEU
+1968,348,Luscinia megarhynchos,DEU
+1968,16,Luscinia megarhynchos                        ,ESP
+1968,47,Luscinia megarhynchos,NL1
+1968,76,Luscinia megarhynchos,CHE
+1969,116,Luscinia megarhynchos,GB1
+1969,228,Luscinia megarhynchos,FR1
+1969,292,Luscinia megarhynchos,DEU
+1969,208,Luscinia megarhynchos,DEU
+1969,20,Luscinia megarhynchos                        ,ESP
+1969,93,Luscinia megarhynchos,NL1
+1969,59,Luscinia megarhynchos,CHE
+1970,133,Luscinia megarhynchos,GB1
+1970,143,Luscinia megarhynchos,FR1
+1970,296,Luscinia megarhynchos,DEU
+1970,203,Luscinia megarhynchos,DEU
+1970,10,Luscinia megarhynchos                        ,ESP
+1970,77,Luscinia megarhynchos,NL1
+1970,78,Luscinia megarhynchos,CHE
+1971,129,Luscinia megarhynchos,GB1
+1971,97,Luscinia megarhynchos,FR1
+1971,352,Luscinia megarhynchos,DEU
+1971,219,Luscinia megarhynchos,DEU
+1971,18,Luscinia megarhynchos                        ,ESP
+1971,76,Luscinia megarhynchos,NL1
+1971,98,Luscinia megarhynchos,CHE
+1972,142,Luscinia megarhynchos,GB1
+1972,1,Luscinia megarhynchos,DN1
+1972,201,Luscinia megarhynchos,FR1
+1972,432,Luscinia megarhynchos,DEU
+1972,227,Luscinia megarhynchos,DEU
+1972,14,Luscinia megarhynchos                        ,ESP
+1972,111,Luscinia megarhynchos,NL1
+1972,92,Luscinia megarhynchos,CHE
+1973,121,Luscinia megarhynchos,GB1
+1973,3,Luscinia megarhynchos,DN1
+1973,276,Luscinia megarhynchos,FR1
+1973,467,Luscinia megarhynchos,DEU
+1973,255,Luscinia megarhynchos,DEU
+1973,4,Luscinia megarhynchos                        ,ESP
+1973,19,Luscinia megarhynchos                        ,ESP
+1973,90,Luscinia megarhynchos,NL1
+1973,91,Luscinia megarhynchos,CHE
+1974,99,Luscinia megarhynchos,GB1
+1974,207,Luscinia megarhynchos,FR1
+1974,494,Luscinia megarhynchos,DEU
+1974,341,Luscinia megarhynchos,DEU
+1974,45,Luscinia megarhynchos                        ,ESP
+1974,9,Luscinia megarhynchos                        ,ESP
+1974,70,Luscinia megarhynchos,NL1
+1974,104,Luscinia megarhynchos,CHE
+1975,79,Luscinia megarhynchos,GB1
+1975,19,Luscinia megarhynchos,FR1
+1975,486,Luscinia megarhynchos,DEU
+1975,292,Luscinia megarhynchos,DEU
+1975,61,Luscinia megarhynchos                        ,ESP
+1975,10,Luscinia megarhynchos                        ,ESP
+1975,68,Luscinia megarhynchos,NL1
+1975,91,Luscinia megarhynchos,CHE
+1976,126,Luscinia megarhynchos,GB1
+1976,1,Luscinia megarhynchos,DN1
+1976,15,Luscinia megarhynchos,FR1
+1976,494,Luscinia megarhynchos,DEU
+1976,272,Luscinia megarhynchos,DEU
+1976,38,Luscinia megarhynchos                        ,ESP
+1976,18,Luscinia megarhynchos                        ,ESP
+1976,77,Luscinia megarhynchos,NL1
+1976,71,Luscinia megarhynchos,CHE
+1977,161,Luscinia megarhynchos,GB1
+1977,1,Luscinia megarhynchos,FR1
+1977,542,Luscinia megarhynchos,DEU
+1977,280,Luscinia megarhynchos,DEU
+1977,38,Luscinia megarhynchos                        ,ESP
+1977,14,Luscinia megarhynchos                        ,ESP
+1977,130,Luscinia megarhynchos,NL1
+1977,61,Luscinia megarhynchos,CHE
+1978,106,Luscinia megarhynchos,GB1
+1978,1,Luscinia megarhynchos,DN1
+1978,0,Luscinia megarhynchos,FR1
+1978,344,Luscinia megarhynchos,DEU
+1978,203,Luscinia megarhynchos,DEU
+1978,39,Luscinia megarhynchos                        ,ESP
+1978,6,Luscinia megarhynchos                        ,ESP
+1978,93,Luscinia megarhynchos,NL1
+1978,47,Luscinia megarhynchos,CHE
+1979,136,Luscinia megarhynchos,GB1
+1979,280,Luscinia megarhynchos,DEU
+1979,152,Luscinia megarhynchos,DEU
+1979,24,Luscinia megarhynchos                        ,ESP
+1979,20,Luscinia megarhynchos                        ,ESP
+1979,116,Luscinia megarhynchos,NL1
+1979,56,Luscinia megarhynchos,CHE
+1980,228,Luscinia megarhynchos,GB1
+1980,3,Luscinia megarhynchos,DN1
+1980,4,Luscinia megarhynchos,FR1
+1980,399,Luscinia megarhynchos,DEU
+1980,161,Luscinia megarhynchos,DEU
+1980,204,Luscinia megarhynchos                        ,ESP
+1980,2,Luscinia megarhynchos                        ,ESP
+1980,144,Luscinia megarhynchos,NL1
+1980,114,Luscinia megarhynchos,CHE
+1981,175,Luscinia megarhynchos,GB1
+1981,2,Luscinia megarhynchos,DN1
+1981,8,Luscinia megarhynchos,FR1
+1981,355,Luscinia megarhynchos,DEU
+1981,133,Luscinia megarhynchos,DEU
+1981,316,Luscinia megarhynchos                        ,ESP
+1981,129,Luscinia megarhynchos,NL1
+1981,84,Luscinia megarhynchos,CHE
+1982,177,Luscinia megarhynchos,GB1
+1982,14,Luscinia megarhynchos,FR1
+1982,443,Luscinia megarhynchos,DEU
+1982,188,Luscinia megarhynchos,DEU
+1982,533,Luscinia megarhynchos                        ,ESP
+1982,4,Luscinia megarhynchos                        ,ESP
+1982,119,Luscinia megarhynchos,NL1
+1982,60,Luscinia megarhynchos,CHE
+1982,197,Luscinia megarhynchos,ITA
+1983,236,Luscinia megarhynchos,GB1
+1983,23,Luscinia megarhynchos,FR1
+1983,528,Luscinia megarhynchos,DEU
+1983,176,Luscinia megarhynchos,DEU
+1983,1077,Luscinia megarhynchos                        ,ESP
+1983,12,Luscinia megarhynchos                        ,ESP
+1983,146,Luscinia megarhynchos,NL1
+1983,94,Luscinia megarhynchos,CHE
+1983,152,Luscinia megarhynchos,ITA
+1984,230,Luscinia megarhynchos,GB1
+1984,72,Luscinia megarhynchos,FR1
+1984,413,Luscinia megarhynchos,DEU
+1984,105,Luscinia megarhynchos,DEU
+1984,1176,Luscinia megarhynchos                        ,ESP
+1984,120,Luscinia megarhynchos,NL1
+1984,88,Luscinia megarhynchos,CHE
+1984,229,Luscinia megarhynchos,ITA
+1985,281,Luscinia megarhynchos,GB1
+1985,2,Luscinia megarhynchos,DN1
+1985,73,Luscinia megarhynchos,FR1
+1985,443,Luscinia megarhynchos,DEU
+1985,136,Luscinia megarhynchos,DEU
+1985,1672,Luscinia megarhynchos                        ,ESP
+1985,1,Luscinia megarhynchos                        ,ESP
+1985,102,Luscinia megarhynchos,NL1
+1985,108,Luscinia megarhynchos,CHE
+1985,285,Luscinia megarhynchos,ITA
+1986,300,Luscinia megarhynchos,GB1
+1986,2,Luscinia megarhynchos,DN1
+1986,123,Luscinia megarhynchos,FR1
+1986,527,Luscinia megarhynchos,DEU
+1986,128,Luscinia megarhynchos,DEU
+1986,1194,Luscinia megarhynchos                        ,ESP
+1986,151,Luscinia megarhynchos,NL1
+1986,51,Luscinia megarhynchos,CHE
+1986,384,Luscinia megarhynchos,ITA
+1987,245,Luscinia megarhynchos,GB1
+1987,3,Luscinia megarhynchos,DN1
+1987,147,Luscinia megarhynchos,FR1
+1987,614,Luscinia megarhynchos,DEU
+1987,249,Luscinia megarhynchos,DEU
+1987,1149,Luscinia megarhynchos                        ,ESP
+1987,172,Luscinia megarhynchos,NL1
+1987,44,Luscinia megarhynchos,CHE
+1987,544,Luscinia megarhynchos,ITA
+1988,309,Luscinia megarhynchos,GB1
+1988,2,Luscinia megarhynchos,DN1
+1988,268,Luscinia megarhynchos,FR1
+1988,657,Luscinia megarhynchos,DEU
+1988,223,Luscinia megarhynchos,DEU
+1988,1134,Luscinia megarhynchos                        ,ESP
+1988,350,Luscinia megarhynchos,NL1
+1988,43,Luscinia megarhynchos,CHE
+1988,1155,Luscinia megarhynchos,ITA
+1989,216,Luscinia megarhynchos,GB1
+1989,393,Luscinia megarhynchos,FR1
+1989,568,Luscinia megarhynchos,DEU
+1989,219,Luscinia megarhynchos,DEU
+1989,1188,Luscinia megarhynchos                        ,ESP
+1989,478,Luscinia megarhynchos,NL1
+1989,54,Luscinia megarhynchos,CHE
+1989,780,Luscinia megarhynchos,ITA
+1990,153,Luscinia megarhynchos,GB1
+1990,455,Luscinia megarhynchos,FR1
+1990,471,Luscinia megarhynchos,DEU
+1990,202,Luscinia megarhynchos,DEU
+1990,1235,Luscinia megarhynchos                        ,ESP
+1990,728,Luscinia megarhynchos,NL1
+1990,51,Luscinia megarhynchos,CHE
+1990,1515,Luscinia megarhynchos,ITA
+1991,187,Luscinia megarhynchos,GB1
+1991,1,Luscinia megarhynchos,DN1
+1991,487,Luscinia megarhynchos,FR1
+1991,594,Luscinia megarhynchos,DEU
+1991,175,Luscinia megarhynchos,DEU
+1991,982,Luscinia megarhynchos                        ,ESP
+1991,491,Luscinia megarhynchos,NL1
+1991,25,Luscinia megarhynchos,CHE
+1991,1028,Luscinia megarhynchos,ITA
+1992,207,Luscinia megarhynchos,GB1
+1992,4,Luscinia megarhynchos,DN1
+1992,481,Luscinia megarhynchos,FR1
+1992,635,Luscinia megarhynchos,DEU
+1992,173,Luscinia megarhynchos,DEU
+1992,1246,Luscinia megarhynchos                        ,ESP
+1992,497,Luscinia megarhynchos,NL1
+1992,35,Luscinia megarhynchos,CHE
+1992,818,Luscinia megarhynchos,ITA
+1993,259,Luscinia megarhynchos,GB1
+1993,368,Luscinia megarhynchos,FR1
+1993,632,Luscinia megarhynchos,DEU
+1993,173,Luscinia megarhynchos,DEU
+1993,1565,Luscinia megarhynchos                        ,ESP
+1993,499,Luscinia megarhynchos,NL1
+1993,31,Luscinia megarhynchos,CHE
+1993,1333,Luscinia megarhynchos,ITA
+1994,186,Luscinia megarhynchos,GB1
+1994,1,Luscinia megarhynchos,DN1
+1994,230,Luscinia megarhynchos,FR1
+1994,698,Luscinia megarhynchos,DEU
+1994,2,Luscinia megarhynchos x Luscinia luscinia,DEU
+1994,119,Luscinia megarhynchos,DEU
+1994,1593,Luscinia megarhynchos                        ,ESP
+1994,445,Luscinia megarhynchos,NL1
+1994,42,Luscinia megarhynchos,CHE
+1994,1303,Luscinia megarhynchos,ITA
+1995,134,Luscinia megarhynchos,GB1
+1995,2,Luscinia megarhynchos,DN1
+1995,376,Luscinia megarhynchos,FR1
+1995,696,Luscinia megarhynchos,DEU
+1995,17,Luscinia megarhynchos x Luscinia luscinia,DEU
+1995,102,Luscinia megarhynchos,DEU
+1995,1809,Luscinia megarhynchos                        ,ESP
+1995,399,Luscinia megarhynchos,NL1
+1995,51,Luscinia megarhynchos,CHE
+1995,1207,Luscinia megarhynchos,ITA
+1996,167,Luscinia megarhynchos,GB1
+1996,4,Luscinia megarhynchos,DN1
+1996,371,Luscinia megarhynchos,FR1
+1996,827,Luscinia megarhynchos,DEU
+1996,21,Luscinia megarhynchos x Luscinia luscinia,DEU
+1996,124,Luscinia megarhynchos,DEU
+1996,1566,Luscinia megarhynchos                        ,ESP
+1996,644,Luscinia megarhynchos,NL1
+1996,48,Luscinia megarhynchos,CHE
+1996,1203,Luscinia megarhynchos,ITA
+1997,231,Luscinia megarhynchos,GB1
+1997,2,Luscinia megarhynchos,DN1
+1997,480,Luscinia megarhynchos,FR1
+1997,752,Luscinia megarhynchos,DEU
+1997,8,Luscinia megarhynchos x Luscinia luscinia,DEU
+1997,326,Luscinia megarhynchos,DEU
+1997,1604,Luscinia megarhynchos                        ,ESP
+1997,819,Luscinia megarhynchos,NL1
+1997,33,Luscinia megarhynchos,CHE
+1997,1325,Luscinia megarhynchos,ITA
+1998,230,Luscinia megarhynchos,GB1
+1998,3,Luscinia megarhynchos,DN1
+1998,468,Luscinia megarhynchos,FR1
+1998,541,Luscinia megarhynchos,DEU
+1998,16,Luscinia megarhynchos x Luscinia luscinia,DEU
+1998,241,Luscinia megarhynchos,DEU
+1998,2138,Luscinia megarhynchos                        ,ESP
+1998,495,Luscinia megarhynchos,NL1
+1998,37,Luscinia megarhynchos,CHE
+1998,985,Luscinia megarhynchos,ITA
+1999,195,Luscinia megarhynchos,GB1
+1999,3,Luscinia megarhynchos,DN1
+1999,372,Luscinia megarhynchos,FR1
+1999,482,Luscinia megarhynchos,DEU
+1999,22,Luscinia megarhynchos x Luscinia luscinia,DEU
+1999,145,Luscinia megarhynchos,DEU
+1999,2544,Luscinia megarhynchos                        ,ESP
+1999,420,Luscinia megarhynchos,NL1
+1999,70,Luscinia megarhynchos,CHE
+1999,822,Luscinia megarhynchos,ITA
+2000,204,Luscinia megarhynchos,GB1
+2000,2,Luscinia megarhynchos,DN1
+2000,415,Luscinia megarhynchos,FR1
+2000,477,Luscinia megarhynchos,DEU
+2000,13,Luscinia megarhynchos x Luscinia luscinia,DEU
+2000,154,Luscinia megarhynchos,DEU
+2000,3078,Luscinia megarhynchos                        ,ESP
+2000,527,Luscinia megarhynchos,NL1
+2000,74,Luscinia megarhynchos,CHE
+2000,758,Luscinia megarhynchos,ITA
+2001,176,Luscinia megarhynchos,GB1
+2001,520,Luscinia megarhynchos,FR1
+2001,490,Luscinia megarhynchos,DEU
+2001,6,Luscinia megarhynchos x Luscinia luscinia,DEU
+2001,123,Luscinia megarhynchos,DEU
+2001,3282,Luscinia megarhynchos                        ,ESP
+2001,835,Luscinia megarhynchos,NL1
+2001,48,Luscinia megarhynchos,CHE
+2001,971,Luscinia megarhynchos,ITA
+2002,118,Luscinia megarhynchos,GB1
+2002,3,Luscinia megarhynchos,DN1
+2002,666,Luscinia megarhynchos,FR1
+2002,450,Luscinia megarhynchos,DEU
+2002,19,Luscinia megarhynchos x Luscinia luscinia,DEU
+2002,137,Luscinia megarhynchos,DEU
+2002,3798,Luscinia megarhynchos                        ,ESP
+2002,887,Luscinia megarhynchos,NL1
+2002,102,Luscinia megarhynchos,CHE
+2002,1275,Luscinia megarhynchos,ITA
+2003,139,Luscinia megarhynchos,GB1
+2003,2,Luscinia megarhynchos,DN1
+2003,825,Luscinia megarhynchos,FR1
+2003,458,Luscinia megarhynchos,DEU
+2003,27,Luscinia megarhynchos x Luscinia luscinia,DEU
+2003,96,Luscinia megarhynchos,DEU
+2003,3520,Luscinia megarhynchos                        ,ESP
+2003,654,Luscinia megarhynchos,NL1
+2003,48,Luscinia megarhynchos,CHE
+2003,1468,Luscinia megarhynchos,ITA
+2004,156,Luscinia megarhynchos,GB1
+2004,1114,Luscinia megarhynchos,FR1
+2004,515,Luscinia megarhynchos,DEU
+2004,17,Luscinia megarhynchos x Luscinia luscinia,DEU
+2004,183,Luscinia megarhynchos,DEU
+2004,3676,Luscinia megarhynchos                        ,ESP
+2004,854,Luscinia megarhynchos,NL1
+2004,154,Luscinia megarhynchos,CHE
+2004,2193,Luscinia megarhynchos,ITA
+2005,143,Luscinia megarhynchos,GB1
+2005,2,Luscinia megarhynchos,DN1
+2005,1241,Luscinia megarhynchos,FR1
+2005,453,Luscinia megarhynchos,DEU
+2005,21,Luscinia megarhynchos x Luscinia luscinia,DEU
+2005,196,Luscinia megarhynchos,DEU
+2005,4516,Luscinia megarhynchos                        ,ESP
+2005,903,Luscinia megarhynchos,NL1
+2005,88,Luscinia megarhynchos,CHE
+2005,2086,Luscinia megarhynchos,ITA
+2006,194,Luscinia megarhynchos,GB1
+2006,1179,Luscinia megarhynchos,FR1
+2006,285,Luscinia megarhynchos,DEU
+2006,74,Luscinia megarhynchos,DEU
+2006,3885,Luscinia megarhynchos                        ,ESP
+2006,556,Luscinia megarhynchos,NL1
+2006,112,Luscinia megarhynchos,CHE
+2006,2293,Luscinia megarhynchos,ITA
+2007,123,Luscinia megarhynchos,GB1
+2007,1,Luscinia megarhynchos,DN1
+2007,1312,Luscinia megarhynchos,FR1
+2007,235,Luscinia megarhynchos,DEU
+2007,1,Luscinia megarhynchos x Luscinia luscinia,DEU
+2007,108,Luscinia megarhynchos,DEU
+2007,4194,Luscinia megarhynchos                        ,ESP
+2007,613,Luscinia megarhynchos,NL1
+2007,52,Luscinia megarhynchos,CHE
+2007,1852,Luscinia megarhynchos,ITA
+2008,134,Luscinia megarhynchos,GB1
+2008,4,Luscinia megarhynchos,DN1
+2008,1569,Luscinia megarhynchos,FR1
+2008,275,Luscinia megarhynchos,DEU
+2008,123,Luscinia megarhynchos,DEU
+2008,44,Luscinia megarhynchos,ESP
+2008,44,Luscinia megarhynchos,ESP
+2008,3564,Luscinia megarhynchos                        ,ESP
+2008,913,Luscinia megarhynchos,NL1
+2008,139,Luscinia megarhynchos,CHE
+2008,690,Luscinia megarhynchos,ITA
+2009,179,Luscinia megarhynchos,GB1
+2009,1979,Luscinia megarhynchos,FR1
+2009,284,Luscinia megarhynchos,DEU
+2009,97,Luscinia megarhynchos,DEU
+2009,63,Luscinia megarhynchos,ESP
+2009,63,Luscinia megarhynchos,ESP
+2009,4072,Luscinia megarhynchos                        ,ESP
+2009,803,Luscinia megarhynchos,NL1
+2009,65,Luscinia megarhynchos,CHE
+2010,206,Luscinia megarhynchos,GB1
+2010,1,Luscinia megarhynchos,DN1
+2010,1438,Luscinia megarhynchos,FR1
+2010,250,Luscinia megarhynchos,DEU
+2010,1,Luscinia megarhynchos x Luscinia luscinia,DEU
+2010,119,Luscinia megarhynchos,DEU
+2010,76,Luscinia megarhynchos,ESP
+2010,76,Luscinia megarhynchos,ESP
+2010,4034,Luscinia megarhynchos                        ,ESP
+2010,980,Luscinia megarhynchos,NL1
+2010,71,Luscinia megarhynchos,CHE
+2011,254,Luscinia megarhynchos,GB1
+2011,1,Luscinia megarhynchos,DN1
+2011,1,Luscinia megarhynchos,DN1
+2011,1911,Luscinia megarhynchos,FR1
+2011,307,Luscinia megarhynchos,DEU
+2011,90,Luscinia megarhynchos,DEU
+2011,155,Luscinia megarhynchos,ESP
+2011,155,Luscinia megarhynchos,ESP
+2011,4298,Luscinia megarhynchos                        ,ESP
+2011,1096,Luscinia megarhynchos,NL1
+2011,87,Luscinia megarhynchos,CHE
+2012,252,Luscinia megarhynchos,GB1
+2012,2,Luscinia megarhynchos,DN1
+2012,1558,Luscinia megarhynchos,FR1
+2012,214,Luscinia megarhynchos,DEU
+2012,72,Luscinia megarhynchos,DEU
+2012,156,Luscinia megarhynchos,ESP
+2012,156,Luscinia megarhynchos,ESP
+2012,4026,Luscinia megarhynchos                        ,ESP
+2012,870,Luscinia megarhynchos,NL1
+2012,66,Luscinia megarhynchos,CHE
+2013,213,Luscinia megarhynchos,GB1
+2013,1,Luscinia megarhynchos,DN1
+2013,1411,Luscinia megarhynchos,FR1
+2013,150,Luscinia megarhynchos,DEU
+2013,65,Luscinia megarhynchos,DEU
+2013,1527,Luscinia megarhynchos,ESP
+2013,1527,Luscinia megarhynchos,ESP
+2013,1473,Luscinia megarhynchos                        ,ESP
+2013,702,Luscinia megarhynchos,NL1
+2013,70,Luscinia megarhynchos,CHE
+2014,165,Luscinia megarhynchos,GB1
+2014,2,Luscinia megarhynchos,DN1
+2014,1538,Luscinia megarhynchos,FR1
+2014,131,Luscinia megarhynchos,DEU
+2014,1267,Luscinia megarhynchos,ESP
+2014,1267,Luscinia megarhynchos,ESP
+2014,1674,Luscinia megarhynchos                        ,ESP
+2014,856,Luscinia megarhynchos,NL1
+2014,109,Luscinia megarhynchos,CHE
+2015,235,Luscinia megarhynchos,GB1
+2015,1,Luscinia megarhynchos,DN1
+2015,1799,Luscinia megarhynchos,FR1
+2015,153,Luscinia megarhynchos,DEU
+2015,155,Luscinia megarhynchos,DEU
+2015,1427,Luscinia megarhynchos,ESP
+2015,1427,Luscinia megarhynchos,ESP
+2015,2020,Luscinia megarhynchos                        ,ESP
+2015,693,Luscinia megarhynchos,NL1
+2015,61,Luscinia megarhynchos,CHE
+2016,198,Luscinia megarhynchos,GB1
+2016,2,Luscinia megarhynchos,DN1
+2016,1451,Luscinia megarhynchos,FR1
+2016,152,Luscinia megarhynchos,DEU
+2016,2,Luscinia megarhynchos x Luscinia luscinia,DEU
+2016,93,Luscinia megarhynchos,DEU
+2016,1368,Luscinia megarhynchos,ESP
+2016,1368,Luscinia megarhynchos,ESP
+2016,2062,Luscinia megarhynchos                        ,ESP
+2016,582,Luscinia megarhynchos,NL1
+2016,59,Luscinia megarhynchos,CHE
+2017,239,Luscinia megarhynchos,GB1
+2017,2,Luscinia megarhynchos,DN1
+2017,1650,Luscinia megarhynchos,FR1
+2017,137,Luscinia megarhynchos,DEU
+2017,160,Luscinia megarhynchos,DEU
+2017,1525,Luscinia megarhynchos,ESP
+2017,1525,Luscinia megarhynchos,ESP
+2017,1670,Luscinia megarhynchos                        ,ESP
+2017,682,Luscinia megarhynchos,NL1
+2018,257,Luscinia megarhynchos,GB1
+2018,1,Luscinia megarhynchos,DN1
+2018,1819,Luscinia megarhynchos,FR1
+2018,164,Luscinia megarhynchos,DEU
+2018,1571,Luscinia megarhynchos,ESP
+2018,1571,Luscinia megarhynchos,ESP
+2018,1481,Luscinia megarhynchos                        ,ESP
+2018,1054,Luscinia megarhynchos,NL1
+2019,308,Luscinia megarhynchos,GB1
+2019,4,Luscinia megarhynchos,DN1
+2019,1951,Luscinia megarhynchos,FR1
+2019,215,Luscinia megarhynchos,DEU
+2019,2014,Luscinia megarhynchos,ESP
+2019,2014,Luscinia megarhynchos,ESP
+2019,1600,Luscinia megarhynchos                        ,ESP
+2019,757,Luscinia megarhynchos,NL1
+2020,228,Luscinia megarhynchos,GB1
+2020,3,Luscinia megarhynchos,DN1
+2020,1564,Luscinia megarhynchos,FR1
+2020,263,Luscinia megarhynchos,DEU
+2020,2,Luscinia megarhynchos x Luscinia luscinia,DEU
+2020,1371,Luscinia megarhynchos ,ESP
+2020,1371,Luscinia megarhynchos ,ESP
+2020,996,Luscinia megarhynchos                        ,ESP
+2020,13,Luscinia megarhynchos                        ,ESP
+2020,717,Luscinia megarhynchos,NL1
+2021,289,Luscinia megarhynchos,GB1
+2021,1,Luscinia megarhynchos,DN1
+2021,1912,Luscinia megarhynchos,FR1
+2021,212,Luscinia megarhynchos,DEU
+2021,1218,Luscinia megarhynchos ,ESP
+2021,1218,Luscinia megarhynchos ,ESP
+2021,1035,Luscinia megarhynchos,ESP
+2021,858,Luscinia megarhynchos                        ,ESP
+2021,674,Luscinia megarhynchos                        ,ESP
+2021,704,Luscinia megarhynchos,NL1
+2022,242,Luscinia megarhynchos,GB1
+2022,2026,Luscinia megarhynchos,FR1
+2022,191,Luscinia megarhynchos,DEU
+2022,1062,Luscinia megarhynchos ,ESP
+2022,1062,Luscinia megarhynchos ,ESP
+2022,416,Luscinia megarhynchos                        ,ESP
+2022,938,Luscinia megarhynchos                        ,ESP
+1947 to 1956,1539,Luscinia megarhynchos,DEU

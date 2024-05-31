@@ -1,0 +1,20 @@
+Migrate Technology Ltd logger
+Type: 4.13.4, current settings: Approx 1'C resolution. Conductivity >63 for 'wets' count. Light range 4, ambient. XT. 
+Logger number: S412
+
+MODE: 10 (full range light recorded)
+LIGHT: Sampled every minute with max light recorded every 5mins.
+TEMPERATURE: NOT RECORDED.
+WET/DRY and CONDUCTIVITY: NOT RECORDED
+Max record length = 24 months. Total battery life upto 11 months. Logger is currently 18 months old.
+
+Programmed: 06/05/2015 15:12:24. Start of logging (DD/MM/YYYY HH:MM:SS): 06/05/2015 15:12:24
+Age at start of logging (secs): 3081874, approx 1 months
+End of logging (DD/MM/YYYY HH:MM:SS): 05/04/2015 16:57:05
+Age at end of logging (secs): 409770, approx 0 months
+Timer (DDDDD:HH:MM:SS): 00000:17:28:02
+Drift (secs): -4294967311. Memory not full. 
+Pointers: 1172,1864,4737096,4737096,0,0,1% light mem used,Inf% wet/dry/temp mem used
+Tcals (Ax^3+Bx^2+Cx+D): 7403.411,-16286.062,10523.572,-2032.528
+Approx 1'C resolution. Conductivity >63 for 'wets' count. Light range 4, ambient. XT. 
+DD/MM/YYYY HH:MM:SS	Tmin('C)	Tmax('C)	Wets(0-480)	Conductivity(0-127)
