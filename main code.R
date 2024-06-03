@@ -26,7 +26,7 @@ library(concaveman)
 rm(list = ls())
 
 # Read in wintering ground locations for UK birds
-setwd(".Github/geolocator data/results/wgr")
+setwd("./geolocator data/results/wgr")
 filenames <- list.files(getwd(), pattern="*.csv", full.names=TRUE)
 uk = tibble(file = filenames) %>%
   tidyr::extract(file, "ID", "(?<=wgr/)(.+)(?=\\_wgr.csv)", remove = FALSE) %>% # Add column with bird tag ID
