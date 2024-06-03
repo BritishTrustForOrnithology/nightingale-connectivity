@@ -4,6 +4,6 @@
 .Rdata
 .Ruserdata
 sdm/
-/geolocator\ data/
-/ringing\ data/
+geolocator*data/
+ringing*data/
 
