@@ -26,8 +26,7 @@ library(concaveman)
 rm(list = ls())
 
 # Read in wintering ground locations for UK birds
-setwd("./geolocator data/results/wgr")
-filenames <- list.files(getwd(), pattern="*.csv", full.names=TRUE)
+filenames <- list.files("./geolocator data/results/wgr", pattern="*.csv", full.names=TRUE)
 uk = tibble(file = filenames) %>%
   tidyr::extract(file, "ID", "(?<=wgr/)(.+)(?=\\_wgr.csv)", remove = FALSE) %>% # Add column with bird tag ID
   mutate(data = lapply(file, read.csv)) %>%
@@ -48,8 +47,7 @@ uk$blon <- ifelse(uk$tag.loc == "Methwold Hythe", 0.5234,
 
 
 # Ring numbers 
-setwd("./geolocator data")
-uk.birds <- read.csv("Tagging sites for retrieved data.csv")
+uk.birds <- read.csv("./geolocator data/Tagging sites for retrieved data.csv")
 uk <- merge(uk, uk.birds, by.x = "ID", by.y = "Tag_no", all = T)
 uk$Ring.No[uk$ID == "0AD"] <- "0AD"
 
@@ -84,8 +82,7 @@ uk.avg <- uk.wgr %>%
   dplyr::distinct(Ring.No, .keep_all=TRUE)
 
 # Read in breeding grounds of birds tagged in Africa
-setwd("./geolocator data/results/brgr")
-filenames <- list.files(getwd(), pattern="*.csv", full.names=TRUE)
+filenames <- list.files("./geolocator data/results/brgr", pattern="*.csv", full.names=TRUE)
 african = tibble(file = filenames) %>%
   tidyr::extract(file, "ID", "(?<=brgr/)(.+)(?=\\_brgr.csv)", remove = FALSE) %>% # Add column with bird tag ID
   mutate(data = lapply(file, read.csv)) %>%
@@ -101,9 +98,8 @@ african.avg <- african.avg %>%
                 Lat = mean(Lat)) %>% 
   dplyr::distinct(indID, .keep_all=TRUE)
 
-  # Read in ringiafrican.avg# Read in ringi# Read in ringi# Read in ringing data from Kartong Bird Observatory
-setwd("./ringing data")
-ringdata <- read.csv("KBO_DATA_NIGAL_20231012.csv")
+  # Read in ringiafrican.avg# Read in ringi# Read in ringi# Read in ringing data from Kartong Bird Observator
+ringdata <- read.csv("./ringing data/KBO_DATA_NIGAL_20231012.csv")
 
 # Select birds recaptured elsewhere
 recap <- unique(ringdata[,c('RING', 'PLACE')])
@@ -115,13 +111,12 @@ recap <- recap %>%
   dplyr::mutate(site = row_number()) # Add site number to differentiate between tagging location and recapture site
 
 # Read in GPS tags
-setwd("./gps data")
 # Breeding locations
-gps1 <- st_read("Obs150324_104804_Tag58279.kml")
-gps2 <- st_read("Obs130324_154637_Tag58288.kml")
+gps1 <- st_read("./gps data/Obs150324_104804_Tag58279.kml")
+gps2 <- st_read("./gps data/Obs130324_154637_Tag58288.kml")
 # Wintering locations 
-gps3 <- st_read("Obs140524_094210_Tag58392.kml")
-gps4 <- st_read("Obs140524_094834_Tag58400.kml")
+gps3 <- st_read("./gps data/Obs140524_094210_Tag58392.kml")
+gps4 <- st_read("./gps data/Obs140524_094834_Tag58400.kml")
 plot(gps3$geometry)
 plot(gps4$geometry)
 
@@ -132,8 +127,7 @@ gps3_coords <- as.data.frame(gps3 %>% st_cast("MULTIPOINT") %>% st_coordinates()
 gps4_coords <- as.data.frame(gps4 %>% st_cast("MULTIPOINT") %>% st_coordinates())
 
 # Read in results of SDM
-setwd("./sdm")
-sdm <- rast("results-rasters.tif") 
+sdm <- rast("./sdm/results-rasters.tif")
 # Crop by extent of records
 # Read in dataset of from GEE
 files <- list.files(path = "./sdm/GEE results", pattern='.csv', 
@@ -153,7 +147,6 @@ plot(countries, add = T, col = NA)
 plot(recs_sf, add = T, col = "black")
 
 # Data from Hahn et al. https://link.springer.com/article/10.1007/s00442-013-2726-4
-setwd(".")
 nigal.hahn <- read.csv("LusMeg_F_IT_BG_KernelMedians for Chris_Nov2023.csv") ## Available upon request from authors
 # Select wintering sites. Populations are France/Western (1), Italy/Central (2) and Bulgaria/Eastern (3)
 # Type = 0: breeding; 1: autumn staging; 2: pre winter site; 3: main winter; 4) spring staging site
@@ -192,8 +185,7 @@ sdDist <- function(lon, lat){
 }
 
 # Read in data from Finch study
-setwd("~/BTO projects/nightingale migration/doi_10.5061_dryad.ss3r7__v1")
-other.data <- read.csv("data.csv")
+other.data <- read.csv("~/BTO projects/nightingale migration/doi_10.5061_dryad.ss3r7__v1/data.csv")
 
 # Replace nightingale data with more accurate data from Hahn et al. 
 other.data <- other.data %>% 
@@ -544,8 +536,7 @@ dunnTest(dists ~ as.factor(group), data = brgr.dists,
 # Ringing recoveries ~~~~~~~~~~~~~~~~
 
 # Extract national ringing data between 2001 & 2023
-setwd("~/BTO projects/nightingale migration/ringing data")
-natring <- read.csv("nigal ringing totals.csv")
+natring <- read.csv("./ringing data/nigal ringing totals.csv")
 natring <- natring %>% 
   mutate(species = gsub(" ","",species)) %>% 
   filter(YEAR > 2000,
@@ -732,8 +723,7 @@ p1 <- ggplot() +
         axis.line = element_blank()) 
 
 ## Changing habitat suitability ####
-setwd("~/BTO projects/nightingale migration/sdm")
-change_rast <- rast("changing-suitability.tif") 
+change_rast <- rast("./sdm/changing-suitability.tif")
 change_rast_cr <- change_rast %>% crop(recs_poly) %>% terra::mask(recs_poly)
 change_df <- as.data.frame(change_rast_cr, xy = T)
 
@@ -760,7 +750,7 @@ ggarrange(p1, p2, ncol = 1)
 dev.off()
 
 # Summarise past suitability 
-past_rast <- rast("past-suitability.tif")
+past_rast <- rast("./sdm/past-suitability.tif")
 past_df <- as.data.frame(terra::extract(past_rast, all_points_sf, fun = table, bind = T, na.rm = T))
 past_df <- gather(past_df, suit, freq, 2:ncol(past_df))
 past_sum <- past_df %>% 
@@ -786,7 +776,7 @@ past_sum <- past_df %>%
   )
 
 # Current suitability
-curr_rast <- rast("current-suitability.tif")
+curr_rast <- rast("./sdm/current-suitability.tif")
 curr_df <- as.data.frame(terra::extract(curr_rast, all_points_sf, fun = table, bind = T, na.rm = T))
 curr_df <- gather(curr_df, suit, freq, 2:ncol(curr_df))
 curr_sum <- curr_df %>%
