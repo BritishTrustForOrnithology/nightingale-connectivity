@@ -1,0 +1,351 @@
+## Google Earth Engine code for extracting enviromental variables for nightingale presence/absence records 
+
+// Zoom to region of West Africa
+Map.setCenter(0, 10, 4); 
+// Plot records
+Map.addLayer(nigal, {}, 'Records');
+
+// Bioclimate data 
+var clim = ee.ImageCollection('IDAHO_EPSCOR/TERRACLIMATE')
+    .filterDate('2001-01-01', '2020-12-31');
+
+// ************************************ RAINFALL ********************************************** //                 
+
+var prec = clim.select('pr');
+
+// Look at precipiation in the region
+// Set visualitation parameters
+var prVis = { 
+  min: 0,
+  max: 150,
+  palette: [
+    '#fff7fb','#ece7f2','#d0d1e6','#a6bddb','#74a9cf','#3690c0','#0570b0','#045a8d','#023858'
+    ],
+};
+// Plot map
+Map.addLayer(prec, prVis, 'Accumulated rainfall');
+
+// Extract annual rainfall. This will give an indication of whether the location experienced higher 
+// or lower than average rainfall. Map through all records to match dates with images. 
+var precRes = nigal.map(function (f) {
+  
+  var date = f.get('date'); // Date of record
+  
+  // Create new property specifying the year of interest
+  var mn = ee.Number.parse(ee.String(date).slice(3,5));
+  var yr = ee.Number.parse(ee.String(date).slice(6,10));
+  // If the record is from Jan or Feb, we are interested in the year before
+  var nyr = ee.Algorithms.If(mn.lt(3),yr.subtract(1),yr); 
+  
+  return ee.Feature(f.geometry(), 
+  
+  // Select images years of interest and sum values of images 
+    prec.filter(ee.Filter.calendarRange(nyr,nyr,'year')).
+         sum().
+  
+  // Extract total rainfall for each record
+  reduceRegion({
+    reducer: ee.Reducer.first(),
+    geometry: f.geometry(), 
+    scale: 4638.3,
+  })).set('ID', f.get('ID')); // Retain ID variable
+});
+
+// Extract monthly rainfall
+// Use a function to iterate through months and create images of average monthly precipitation
+var months = ee.List.sequence(1,12); // Create list of months 
+// Rather than doing this within the reduceRegions function, we want to export 
+// images because we will need them for making predictions later on 
+var prec_monthly = ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(prec.
+        filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).toBands(). // Convert to multi-band image
+    rename('JanRain','FebRain','MarchRain','AprRain','MayRain','JuneRain','JulyRain','AugRain','SepRain','OctRain','NovRain','DecRain');
+
+print('Monthly precipitation:', prec_monthly.getInfo());
+
+var monthlyPrecRes = prec_monthly.
+  reduceRegions({
+    reducer: ee.Reducer.first(),
+    collection: nigal,
+    scale: 4638.3,
+  });
+
+// Check results
+print('Precipitation results:', precRes.first());
+print(monthlyPrecRes.first());
+
+// Export
+Export.table.toDrive({
+  collection: precRes,  
+  description: 'nigal-prec',
+  folder: 'nigal GEE results'
+});
+Export.table.toDrive({
+  collection: monthlyPrecRes, 
+  description: 'nigal-monthly-prec',
+  folder: 'nigal GEE results'
+});
+
+// ************************************ TEMPERATURE ********************************************** //                 
+
+var tmp = clim.select(['tmmn','tmmx']);
+
+// Plot temp
+var tmpVis = {
+  min: -300.0,
+  max: 300.0,
+  palette: [
+    '1a3678', '2955bc', '5699ff', '8dbae9', 'acd1ff', 'caebff', 'e5f9ff',
+    'fdffb4', 'ffe6a2', 'ffc969', 'ffa12d', 'ff7c1f', 'ca531a', 'ff0000',
+    'ab0000'
+  ],
+};
+Map.addLayer(tmp.select('tmmn'), tmpVis, 'Temperature');
+
+// Iterate through months and select average minimum and max temperature
+var tmp_min = ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(tmp.select('tmmn').
+        filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).min();
+Map.addLayer(tmp_min, tmpVis, 'Minimum temperature');
+
+var tmp_max = ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(tmp.select('tmmx').
+        filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).max();
+
+// Extract temp for each record
+var maxTmpRes = tmp_max.
+  reduceRegions({
+    reducer: ee.Reducer.first().setOutputs(["tmmx"]), 
+    collection: nigal,
+    scale: 4638.3,
+  });
+  
+var minTmpRes = tmp_min.
+  reduceRegions({
+    reducer: ee.Reducer.first().setOutputs(["tmmn"]), 
+    collection: nigal,
+    scale: 4638.3,
+  });
+
+// Check results
+print('Temperature results:', minTmpRes.first());
+print(maxTmpRes.first());
+
+// Export
+Export.table.toDrive({
+  collection: minTmpRes, 
+  description: 'nigal-min-temp',
+  folder: 'nigal GEE results'
+});
+
+Export.table.toDrive({
+  collection: maxTmpRes, 
+  description: 'nigal-max-temp',
+  folder: 'nigal GEE results'
+});
+
+// ************************************ PALMER'S DROUGHT SEVERITY INDEX ********************************************** //         
+
+var pdsi = clim.select('pdsi');
+
+// Visualise
+var pdsiVis = {
+  min: -4000.0,
+  max: 3000.0,
+  palette: [
+    '1a3678', '2955bc', '5699ff', '8dbae9', 'acd1ff', 'caebff', 'e5f9ff',
+    'fdffb4', 'ffe6a2', 'ffc969', 'ffa12d', 'ff7c1f', 'ca531a', 'ff0000',
+    'ab0000'
+  ],
+};
+Map.addLayer(pdsi, pdsiVis, 'PDSI');
+
+// Repeat extraction of annual rainfall using PDSI
+var pdsiRes = nigal.map(function (f) {
+  
+  // What year is the record from?
+  var date = f.get('date'); 
+  // If the record is from Jan or Feb, we are interested in the year before
+  var mn = ee.Number.parse(ee.String(date).slice(3,5));
+  var yr = ee.Number.parse(ee.String(date).slice(6,10));
+  var nyr = ee.Algorithms.If(mn.lt(3),yr.subtract(1),yr); 
+  
+  return ee.Feature(f.geometry(), 
+  
+  // Select images years of interest and sum values of images 
+    pdsi.filter(ee.Filter.calendarRange(nyr,nyr,'year')).
+         mean().
+  
+  // Extract annual PDSI for each record
+  reduceRegion({
+    reducer: ee.Reducer.first(),
+    geometry: f.geometry(), 
+    scale: 4638.3,
+  })).set('ID', f.get('ID')); // Retain ID variable;
+});
+
+// Check results
+print('Drought results:', pdsiRes.first());
+
+// Export
+Export.table.toDrive({
+  collection: pdsiRes, 
+  description: 'nigal-pdsi',
+  folder: 'nigal GEE results'
+});
+
+// ************************************ NDVI ********************************************** //                 
+
+var terra = ee.ImageCollection('MODIS/061/MOD13Q1').select('NDVI');
+var aqua = ee.ImageCollection('MODIS/061/MYD13Q1').select('NDVI');
+
+// Merge image collections
+var ndvi = terra.merge(aqua).
+ filterDate('2001-01-01', '2020-12-31'); // This time period covers out study period and a bit before 
+ 
+// Plot mean NDVI
+var ndviVis = {
+  min:0,
+  max:9000,
+  palette: ['ffffff','ce7e45','df923d','f1b555','fcd163','99b718','74a901','66a000','529400',
+    '3e8601','207401','056201','004c00','023b01','012e01','011d01','011301'],
+  }; 
+Map.addLayer(ndvi, ndviVis, 'NDVI');
+
+// Use a function to iterate through months and create images of average monthly NDVI. 
+var ndvi_monthly = ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(ndvi.
+        filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).toBands(). // Convert to multi-band image
+    rename('JanNDVI','FebNDVI','MarchNDVI','AprNDVI','MayNDVI','JuneNDVI','JulyNDVI','AugNDVI','SepNDVI','OctNDVI','NovNDVI','DecNDVI');
+// Explore monthly composites  
+print('NDVI bands:', ndvi_monthly.getInfo());
+
+// Extract data underlying nightingale points
+var ndviRes = ndvi_monthly.reduceRegions({
+  reducer: ee.Reducer.first(),
+  collection: nigal,
+  scale: 250,
+  });
+
+// Check results
+print('NDVI results:', ndviRes.first());
+
+// Export
+Export.table.toDrive({
+  collection: ndviRes, 
+  description: 'nigal-ndvi',
+  folder: 'nigal GEE results'
+});
+
+// ************************************ ELEVATION ********************************************** //                 
+
+var elev = ee.Image('CGIAR/SRTM90_V4').select('elevation');
+Map.addLayer(elev, {min: 0, max: 60}, 'Elevation');
+
+var elevRes = elev.
+  reduceRegions({
+    reducer: ee.Reducer.first().
+      setOutputs(['elevation']), 
+    collection: nigal,
+    scale: 92.76624232,
+  });
+
+// Check results
+print('Elevation results:', elevRes.first());
+
+// Export
+Export.table.toDrive({
+  collection: elevRes, 
+  description: 'nigal-elev',
+  folder: 'nigal GEE results'
+});
+
+// #### Export results #### //
+
+// Combine properties in the different feature collections
+// var res = precRes.map (function (f) {
+//     return f.copyProperties(avgprecRes.filter(ee.Filter.eq('ID', f.get('ID'))).first()).
+//              copyProperties(tmpRes.filter(ee.Filter.eq('ID', f.get('ID'))).first()).
+//              copyProperties(pdsiRes.filter(ee.Filter.eq('ID', f.get('ID'))).first()).
+//              copyProperties(ndviRes.filter(ee.Filter.eq('ID', f.get('ID'))).first()).
+//              copyProperties(elevRes.filter(ee.Filter.eq('ID', f.get('ID'))).first());
+//   });
+
+// Check results 
+// print('Final results:', res.first());
+
+// Export results
+// Export.table.toDrive({
+//   collection: res
+//   description: 'nigal-GEE-results',
+//   folder: 'nigal GEE results'
+// });
+
+// Export rasters
+var rastExp = prec_monthly.addBands(tmp_min).addBands(tmp_max).addBands(ndvi_monthly).addBands(pdsi.mean()).addBands(elev.double());
+// Need to make elevation image into 64-bit float to match other images
+print('Combined rasters:', rastExp); 
+
+Export.image.toDrive({ 
+  image: rastExp,
+  description: 'GEE-rasts',
+  // Crop by West African extent
+  region: wa,
+  folder: 'nigal GEE results',
+  maxPixels: 1e12,
+  scale: 4638 // Match lowest resolution of climate data
+});
+
+// Export rasters to look at change over time 
+var rast2020 = ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(prec
+        .filterDate('2020-01-01', '2020-12-31')
+        .filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).toBands(). // Convert to multi-band image
+    rename('JanRain','FebRain','MarchRain','AprRain','MayRain','JuneRain','JulyRain','AugRain','SepRain','OctRain','NovRain','DecRain')
+  .addBands(ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(ndvi
+        .filterDate('2020-01-01', '2020-12-31')
+        .filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).toBands(). // Convert to multi-band image
+    rename('JanNDVI','FebNDVI','MarchNDVI','AprNDVI','MayNDVI','JuneNDVI','JulyNDVI','AugNDVI','SepNDVI','OctNDVI','NovNDVI','DecNDVI'))
+    .addBands(ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(tmp.select('tmmx').filterDate('2020-01-01', '2020-12-31').
+        filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).max())
+    .addBands(ee.ImageCollection.fromImages(
+      months.map(function (m) {
+        return ee.Image(tmp.select('tmmn').filterDate('2020-01-01', '2020-12-31').
+        filter(ee.Filter.calendarRange(m, m, 'month'))
+                    .mean());
+})).min())
+  .addBands(pdsi.filterDate('2020-01-01', '2020-12-31').mean())
+  .addBands(elev.double());
+
+Export.image.toDrive({ 
+  image: rast2020,
+  description: '2020-rasts',
+  // Crop by West African extent
+  region: wa,
+  folder: 'nigal GEE results',
+  maxPixels: 1e12,
+  scale: 4638 // Match lowest resolution of climate data
+});
