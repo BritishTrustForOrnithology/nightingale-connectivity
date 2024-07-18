@@ -1,5 +1,8 @@
 ## Google Earth Engine code for extracting enviromental variables for nightingale presence/absence records 
 
+// Create bounding box for West African region
+var wa = ee.Geometry.BBox(-18.0416195374957, 2.99999216327873, 15, 17.5);
+
 // Zoom to region of West Africa
 Map.setCenter(0, 10, 4); 
 // Plot records
