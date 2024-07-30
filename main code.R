@@ -881,7 +881,7 @@ wgr.no.mask <- rbind.fill(
            overlap.mid == "Y")
 
 ,
-african %>% filter(site == "brgr" & mask == "none")))
+african %>% filter(site == "brgr" & mask == "none"))
 
 wgr.no.mask$group <- ifelse(
   wgr.no.mask$tag.loc == "Ghana",
