@@ -45,7 +45,6 @@ uk$blon <- ifelse(uk$tag.loc == "Methwold Hythe", 0.5234,
                            ifelse(uk$tag.loc == "Orlestone Forest", 0.8322222222222,
                                   -0.31504)))
 
-
 # Ring numbers 
 uk.birds <- read.csv("./geolocator data/Tagging sites for retrieved data.csv")
 uk <- merge(uk, uk.birds, by.x = "ID", by.y = "Tag_no", all = T)
@@ -185,7 +184,7 @@ sdDist <- function(lon, lat){
 }
 
 # Read in data from Finch study
-other.data <- read.csv("~/BTO projects/nightingale migration/doi_10.5061_dryad.ss3r7__v1/data.csv")
+other.data <- read.csv("~/BTO projects/nightingale projects/nightingale migration/doi_10.5061_dryad.ss3r7__v1/data.csv")
 
 # Replace nightingale data with more accurate data from Hahn et al. 
 other.data <- other.data %>% 
@@ -352,13 +351,11 @@ kruskal.test(dists ~ popunique, data = nigal.dists.out)
 # Comparison of estimated wintering grounds ~~~~~~~~~~~~~~~~
 ggplot() +
   geom_sf(data = countries, fill = "grey90", col = "grey50", linewidth = .1) +
-  geom_pointrange(data = uk.wgr[uk.wgr$site.num == 1 | uk.wgr$overlap.mid == "Y",], mapping = aes(x = Lon, y = Lat, ymin = Lat.2.5., ymax = Lat.97.25.), size = .2, alpha = .4) +
-  geom_errorbarh(data = uk.wgr[uk.wgr$site.num == 1 | uk.wgr$overlap.mid == "Y",], mapping = aes(y = Lat, xmin = Lon.2.5., xmax = Lon.97.25.), linewidth = .7, alpha = .4) +
-  geom_pointrange(data = african[african$mask == "land" & african$site == "wgr" & african$tag.loc == "Gambia",], mapping = aes(x = Lon, y = Lat, ymin = Lat.2.5., ymax = Lat.97.25.), size = .2, alpha = .4) +
-  geom_errorbarh(data = african[african$mask == "land" & african$site == "wgr" & african$tag.loc == "Gambia",], mapping = aes(y = Lat, xmin = Lon.2.5., xmax = Lon.97.25.), linewidth = .7, alpha = .4) +
-  geom_point(data = uk.wgr[uk.wgr$site.num == 1 | uk.wgr$overlap.mid == "Y",], mapping = aes(x = Lon, y = Lat, fill = as.factor(site.num)), pch = 21, size = 4, stroke = .2) + 
+  geom_point(data = uk.wgr[uk.wgr$site.num == 1 | uk.wgr$overlap.mid == "Y",], mapping = aes(x = Lon, y = Lat, fill = tag.loc), pch = 21, size = 4, stroke = .2) + 
   geom_point(data = african[african$mask == "land" & african$site == "wgr" & african$tag.loc == "Gambia",], mapping = aes(x = Lon, y = Lat), pch = 21, size = 4, fill = "red", stroke = .2) +
-  scale_fill_manual(values = c("blue", "lightblue")) +
+  geom_point(data = african[african$mask == "land" & african$site == "wgr" & african$tag.loc == "Ghana",], mapping = aes(x = Lon, y = Lat), pch = 21, size = 4, fill = "darkgreen", stroke = .2) +
+  geom_point(data = uk.wgr[uk.wgr$ID  == "Z412",], mapping = aes(x = Lon, y = Lat), pch = 21, size = 4, stroke = .2, fill = "lightblue") + 
+  geom_point(data = uk.wgr[uk.wgr$ID  == "S413",], mapping = aes(x = Lon, y = Lat), pch = 21, size = 4, stroke = .2, fill = "#1d91c0") + 
   geom_point(mapping = aes(x = -16.7666672, y = 13.1), size = 2, fill = "yellow", pch = 24, stroke = .2) +
   # Add symbol to show repeats. See tagging sites info for ring numbers.
   geom_point(data = uk.wgr[uk.wgr$ID == "097",], mapping = aes(x = Lon, y = Lat), size = 1, col = "white") +
@@ -372,7 +369,7 @@ ggplot() +
   geom_point(data = uk.wgr[uk.wgr$ID == "Z411",], mapping = aes(x = Lon, y = Lat), size = 1, col = "#addd8e") +
   geom_point(data = african[african$mask == "land" & african$site == "wgr" & african$ID == "BV422",], mapping = aes(x = Lon, y = Lat), size = 1, col = "white") +
   geom_point(data = african[african$mask == "land" & african$site == "wgr" & african$ID == "BR064",], mapping = aes(x = Lon, y = Lat), size = 1, col = "white") +
-  xlim(-19,-3) + 
+  xlim(-19,1) + 
   ylim(-4,37) + 
   theme_classic() + 
   guides(fill = "none") +
