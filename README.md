@@ -4,7 +4,7 @@
 
 Here, we include the final processed non-breeding grounds used in the analyses, obtained from GLS, GPS tags, and ringing recoveries. GLS-derived non-breeding locations for other species can be obtained from Finch et al. 2017, and specifically for other breeding populations of nightingales, these data can be obtained from Hahn et al. 2013. National ringing data are available from [Euring](https://euring.org/data-and-codes/ringing-totals).
 
-The data needed for the SDM were obtained from the [Earth Engine catalogue](https://developers.google.com/earth-engine/datasets/) and [ESA CCI (2018)](https://www.esa-landcover-cci.org/). The presence and abdsence records were obtained from [eBird](https://ebird.org/home), the [African Bird Atlas](https://www.birdmap.africa/), and Zwarts et al. (2023)
+The data needed for the SDM were obtained from the [Earth Engine catalogue](https://developers.google.com/earth-engine/datasets/) and [ESA CCI (2018)](https://www.esa-landcover-cci.org/). The presence and absence records were obtained from [eBird](https://ebird.org/home), the [African Bird Atlas](https://www.birdmap.africa/), and Zwarts et al. (2023)
 
 We used Google Earth Engine and R to extract, manipulate, and analyse these data.
 
