@@ -33,8 +33,6 @@ library(tidyr)
 library(stringr)
 library(Boruta)
 
-setwd("./sdm") ## Where data for SDM are shored
-
 # Read in dataset of from GEE
 files <- list.files(path = "./sdm/GEE results", pattern='.csv', 
            all.files = T, full.names = T)
