@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/808486217.svg)](https://doi.org/10.5281/zenodo.14393012)
+
 # ANALYSIS OF NIGHTINGALE MIGRATORY CONNECTIVITY IN R
 
 Here, we include the final processed non-breeding grounds used in the analyses, obtained from GLS, GPS tags, and ringing recoveries. GLS-derived non-breeding locations for other species can be obtained from Finch et al. 2017, and specifically for other breeding populations of nightingales, these data can be obtained from Hahn et al. 2013. National ringing data are available from [Euring](https://euring.org/data-and-codes/ringing-totals).
